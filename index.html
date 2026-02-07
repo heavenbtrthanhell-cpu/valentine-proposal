@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine?</h1>
+        
+        <div class="hearts">
+            <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+        </div>
+        
+        <div class="question-box">
+            <p class="question" id="question">Will you be my Valentine?</p>
+            
+            <div class="buttons-container" id="buttonsContainer">
+                <button class="btn yes-btn" id="yesBtn">YES!</button>
+                <button class="btn no-btn" id="noBtn">No</button>
+            </div>
+        </div>
+        
+        <div class="result" id="result">
+            <div class="celebration">
+                <i class="fas fa-heart"></i> <i class="fas fa-star"></i> <i class="fas fa-heart"></i>
+            </div>
+            <h2>YAY!</h2>
+            <p>Can't wait to have the most beautiful Valentine's Day this year with my PRINCESS!!!</p>
+            <p>You've made me the happiest person in the world! ❤️</p>
+            
+            <!-- Photo Gallery -->
+            <div class="photo-gallery">
+                <div class="photos-container">
+                    <div class="photo-frame">
+                        <img src="photo1.jpg" alt="Memory 1" class="photo">
+                    </div>
+                    <div class="photo-frame">
+                        <img src="photo2.jpg" alt="Memory 2" class="photo">
+                    </div>
+                    <div class="photo-frame">
+                        <img src="photo3.jpg" alt="Memory 3" class="photo">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="music-player">
+                <p>Our song is playing...</p>
+                <div class="music-controls">
+                    <button class="music-btn" id="playBtn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="music-btn" id="pauseBtn">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                    <button class="music-btn" id="volumeUpBtn">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                </div>
+                <audio id="valentineSong" loop>
+                    <source src="song.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <div class="hearts">
+                <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Made with <i class="fas fa-heart" style="color:#ff4d7e"></i> for you
+        </div>
+    </div>
+
+    <!-- Floating heart decorations -->
+    <div class="heart-decoration" style="top: 10%; left: 5%; font-size: 1.5rem;">❤️</div>
+    <div class="heart-decoration" style="top: 15%; right: 8%; font-size: 2.2rem;">❤️</div>
+    <div class="heart-decoration" style="bottom: 20%; left: 7%; font-size: 1.8rem;">❤️</div>
+    <div class="heart-decoration" style="bottom: 15%; right: 5%; font-size: 2.5rem;">❤️</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
